@@ -1,11 +1,11 @@
 
-import './App.css';
-
+import { Body } from './components/Body';
 function App() {
   return (
-    <div className="text-3xl font-bold text-yellow-400">
-      Hello World!  This is my netflix app. 
+    <div>
+      <Body/>
     </div>
+  
   );
 }
 
