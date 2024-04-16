@@ -14,10 +14,10 @@ const Login=()=>{
     }
     
     const handleButtonClick=()=>{
-        const messsage=checkValidData(email.current.value,password.current.value);
-        seterrorMessage(messsage);
-        // console.log(email.current.val);
-        // console.log(password.current.val);
+        const message=checkValidData(email.current.value,password.current.value);
+        seterrorMessage(message);
+        if(message) return;
+        
     }
 
     return (
@@ -55,7 +55,7 @@ const Login=()=>{
             <p 
             className="text-sm cursor-pointer " onClick={toggleSignInForm}>{isSignForm ? "Already User! Please Sign In":"New To Netflix! Sign Up Now"}
             </p>
-            
+
             </form>
              
         </div>
